@@ -1,0 +1,29 @@
+name: StormerWarpsReloaded
+version: '${project.version}'
+main: me.loving11ish.stormerwarpsreloaded.StormerWarpsReloaded
+api-version: 1.13
+authors: [Loving11ish, stormer3428]
+description: Updated and upgraded StormerWarps plugin! Updated to make it more recourse efficient.
+
+commands:
+  warp:
+    description: "Teleports you to your warp"
+    permission: "stormerwarpsreloaded.use"
+  warps:
+    description: "Lists all of your warps"
+    permission: "stormerwarpsreloaded.use"
+  setwarp:
+    description: "Sets your warp"
+    permission: "stormerwarpsreloaded.admin"
+  delwarp:
+    description: "Deletes a warp"
+    permission: "stormerwarpsreloaded.admin"
+  swreload:
+    description: "reloads the config"
+    permission: "stormerwarpsreloaded.admin"
+
+permissions:
+  stormerwarpsreloaded.use:
+    default: true
+  stormerwarpsreloaded.admin:
+    default: op
