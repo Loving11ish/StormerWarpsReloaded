@@ -16,9 +16,6 @@ public class WarpCommand implements CommandExecutor {
 
     FileConfiguration messagesConfig = StormerWarpsReloaded.i.messagesFileManager.getMessagesConfig();
 
-    public WarpCommand() {
-    }
-
     public boolean onCommand(CommandSender sender, Command cmd, String alias, String[] args) {
 
         if (sender instanceof Player) {

@@ -12,9 +12,6 @@ import java.util.List;
 
 public class WarpTabCompleter implements TabCompleter {
 
-    public WarpTabCompleter() {
-    }
-
     public List<String> onTabComplete(CommandSender sender, Command cmd, String alias, String[] args) {
         List<String> list = new ArrayList();
         String s = "";

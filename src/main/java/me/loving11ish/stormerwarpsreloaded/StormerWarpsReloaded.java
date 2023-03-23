@@ -19,13 +19,17 @@ public final class StormerWarpsReloaded extends JavaPlugin {
     public static StormerWarpsReloaded i;
     public MessagesFileManager messagesFileManager;
 
-    public StormerWarpsReloaded() {
-    }
-
     @Override
     public void onEnable() {
         // Plugin startup logic
         i = this;
+
+        //Load main plugin config
+        this.loadConfig();
+
+        //Load messages.yml
+        this.messagesFileManager = new MessagesFileManager();
+        messagesFileManager.MessagesFileManager(this);
 
         //Register commands
         this.getCommand("warp").setExecutor(new WarpCommand());
@@ -38,10 +42,6 @@ public final class StormerWarpsReloaded extends JavaPlugin {
         this.getCommand("swreload").setExecutor(new WarpCommand());
         this.reload();
         super.onEnable();
-
-        //Load messages.yml
-        this.messagesFileManager = new MessagesFileManager();
-        messagesFileManager.MessagesFileManager(this);
     }
 
     @Override
