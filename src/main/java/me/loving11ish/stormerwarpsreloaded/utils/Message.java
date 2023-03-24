@@ -1,8 +1,10 @@
 package me.loving11ish.stormerwarpsreloaded.utils;
 
+import me.loving11ish.stormerwarpsreloaded.StormerWarpsReloaded;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
 import java.util.Iterator;
@@ -10,24 +12,10 @@ import java.util.List;
 
 public class Message {
 
-    private static final String PLUGIN_NAME = "Stormer's Warps";
-    private static final ChatColor BRACKETS_COLOR;
-    private static final ChatColor NAME_COLOR;
-    private static final ChatColor MESSAGE_COLOR;
-    private static final ChatColor MESSAGE_ERROR_COLOR;
-
-    static {
-        BRACKETS_COLOR = ChatColor.LIGHT_PURPLE;
-        NAME_COLOR = ChatColor.RED;
-        MESSAGE_COLOR = ChatColor.GREEN;
-        MESSAGE_ERROR_COLOR = ChatColor.RED;
-    }
-
-    public Message() {
-    }
+    private static FileConfiguration messagesConfig = StormerWarpsReloaded.i.messagesFileManager.getMessagesConfig();
 
     public static void normal(CommandSender p, String strg) {
-        String m = BRACKETS_COLOR + "[" + NAME_COLOR + "Stormer's Warps" + BRACKETS_COLOR + "] " + MESSAGE_COLOR + strg;
+        String m = messagesConfig.getString("plugin-prefix") + strg;
         p.sendMessage(ColorUtils.translateColorCodes(m));
     }
 
@@ -54,7 +42,7 @@ public class Message {
     }
 
     public static void error(CommandSender p, String strg) {
-        String m = BRACKETS_COLOR + "[" + NAME_COLOR + "Error" + BRACKETS_COLOR + "] " + MESSAGE_ERROR_COLOR + strg;
+        String m = messagesConfig.getString("plugin-prefix" + " [ERROR] ") + strg;
         p.sendMessage(ColorUtils.translateColorCodes(m));
     }
 
@@ -81,12 +69,12 @@ public class Message {
     }
 
     public static void systemNormal(String strg) {
-        String m = BRACKETS_COLOR + "[" + NAME_COLOR + "Stormer's Warps" + BRACKETS_COLOR + "] " + MESSAGE_COLOR + strg;
+        String m = messagesConfig.getString("plugin-prefix") + strg;
         Bukkit.getConsoleSender().sendMessage(ColorUtils.translateColorCodes(m));
     }
 
     public static void systemError(String strg) {
-        String m = BRACKETS_COLOR + "[" + NAME_COLOR + "Stormer's Warps" + BRACKETS_COLOR + "] " + MESSAGE_ERROR_COLOR + strg;
+        String m = messagesConfig.getString("plugin-prefix" + " [ERROR] ") + strg;
         Bukkit.getConsoleSender().sendMessage(ColorUtils.translateColorCodes(m));
     }
 }
