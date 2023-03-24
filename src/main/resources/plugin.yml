@@ -8,10 +8,8 @@ description: Updated and upgraded StormerWarps plugin! Updated to make it more r
 commands:
   warp:
     description: "Teleports you to your warp"
-    permission: "stormerwarpsreloaded.use"
   warps:
     description: "Lists all of your warps"
-    permission: "stormerwarpsreloaded.use"
   setwarp:
     description: "Sets your warp"
     permission: "stormerwarpsreloaded.admin"
@@ -23,7 +21,5 @@ commands:
     permission: "stormerwarpsreloaded.admin"
 
 permissions:
-  stormerwarpsreloaded.use:
-    default: true
   stormerwarpsreloaded.admin:
     default: op

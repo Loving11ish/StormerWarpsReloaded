@@ -40,7 +40,7 @@ public class Message {
     }
 
     public static void error(CommandSender p, String strg) {
-        p.sendMessage(ColorUtils.translateColorCodes(messagesConfig.getString("plugin-prefix" + " [ERROR] ") + ColorUtils.translateColorCodes(strg)));
+        p.sendMessage(ColorUtils.translateColorCodes(messagesConfig.getString("plugin-prefix") + " [ERROR] " + ColorUtils.translateColorCodes(strg)));
     }
 
     public static void error(String strg) {
@@ -70,6 +70,6 @@ public class Message {
     }
 
     public static void systemError(String strg) {
-        Bukkit.getConsoleSender().sendMessage(ColorUtils.translateColorCodes(messagesConfig.getString("plugin-prefix" + " [ERROR] ") + ColorUtils.translateColorCodes(strg)));
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.translateColorCodes(messagesConfig.getString("plugin-prefix")+ " [ERROR] " + ColorUtils.translateColorCodes(strg)));
     }
 }

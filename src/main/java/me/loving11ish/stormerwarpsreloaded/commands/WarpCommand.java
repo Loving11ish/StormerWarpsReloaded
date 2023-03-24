@@ -21,20 +21,12 @@ public class WarpCommand implements CommandExecutor {
         if (sender instanceof Player) {
             Player p = (Player)sender;
             if (cmd.getName().equalsIgnoreCase("warps")) {
-                if (!p.isOp()||!p.hasPermission("stormerwarpsreloaded.use")||!p.hasPermission("stormerwarpsreloaded.admin")||!p.hasPermission("stormerwarpsreloaded.*")){
-                    Message.error(p, messagesConfig.getString("command-error-no-permission"));
-                    return true;
-                }
                 listWarps(p);
                 return true;
             }
 
             Warp warp;
             if (cmd.getName().equalsIgnoreCase("warp")) {
-                if (!p.isOp()||!p.hasPermission("stormerwarpsreloaded.use")||!p.hasPermission("stormerwarpsreloaded.admin")||!p.hasPermission("stormerwarpsreloaded.*")){
-                    Message.error(p, messagesConfig.getString("command-error-no-permission"));
-                    return true;
-                }
                 if (args.length == 0) {
                     Message.error(p, messagesConfig.getString("command-error-no-arg"));
                     return false;
