@@ -6,7 +6,7 @@
 #                                  ----[Plugin Messages File]----                                   #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-plugin-prefix: "&d[&cStormerWarpsReloaded&d] "
+plugin-prefix: "&d[&cStormerWarpsReloaded&d]&r "
 warp-load-attempt: "&3Attempting to load warp (%PATH%)"
 invalid-error-string: "&cInvalid configuration for warp : &d(%PATH%)"
 invalid-error-string-world: "&cInvalid world name for warp : &d(%PATH%)"

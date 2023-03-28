@@ -3,21 +3,28 @@ package me.loving11ish.stormerwarpsreloaded;
 import me.loving11ish.stormerwarpsreloaded.commands.WarpCommand;
 import me.loving11ish.stormerwarpsreloaded.commands.WarpTabCompleter;
 import me.loving11ish.stormerwarpsreloaded.files.MessagesFileManager;
+import me.loving11ish.stormerwarpsreloaded.listeners.PlayerConnectEvent;
+import me.loving11ish.stormerwarpsreloaded.listeners.PlayerDisconnectEvent;
 import me.loving11ish.stormerwarpsreloaded.models.Warp;
+import me.loving11ish.stormerwarpsreloaded.utils.ColorUtils;
 import me.loving11ish.stormerwarpsreloaded.utils.Message;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.geysermc.floodgate.api.FloodgateApi;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
+import java.util.logging.Logger;
 
 public final class StormerWarpsReloaded extends JavaPlugin {
 
     public static StormerWarpsReloaded i;
+    private static FloodgateApi floodgateApi;
     public MessagesFileManager messagesFileManager;
+    Logger logger = this.getLogger();
+
+    private HashMap<UUID, String> bedrockPlayers = new HashMap<>();
 
     @Override
     public void onEnable() {
@@ -40,7 +47,27 @@ public final class StormerWarpsReloaded extends JavaPlugin {
         this.getCommand("delwarp").setTabCompleter(new WarpTabCompleter());
         this.getCommand("warps").setExecutor(new WarpCommand());
         this.getCommand("swreload").setExecutor(new WarpCommand());
+
+        //Register events
+        this.getServer().getPluginManager().registerEvents(new PlayerConnectEvent(), this);
+        this.getServer().getPluginManager().registerEvents(new PlayerDisconnectEvent(), this);
+
+        //Load warps
         this.reload();
+
+        //Register FloodgateApi hooks
+        if (Bukkit.getServer().getPluginManager().isPluginEnabled("floodgate")){
+            floodgateApi = FloodgateApi.getInstance();
+            logger.info(ColorUtils.translateColorCodes("-------------------------------------------"));
+            logger.info(ColorUtils.translateColorCodes("&6StormerWarpsReloaded: &3FloodgateApi found!"));
+            logger.info(ColorUtils.translateColorCodes("&6StormerWarpsReloaded: &3Full Bedrock support enabled!"));
+            logger.info(ColorUtils.translateColorCodes("-------------------------------------------"));
+        }else {
+            logger.info(ColorUtils.translateColorCodes("-------------------------------------------"));
+            logger.info(ColorUtils.translateColorCodes("&6StormerWarpsReloaded: &3FloodgateApi not found!"));
+            logger.info(ColorUtils.translateColorCodes("&6StormerWarpsReloaded: &3Bedrock support may not function!"));
+            logger.info(ColorUtils.translateColorCodes("-------------------------------------------"));
+        }
         super.onEnable();
     }
 
@@ -151,5 +178,25 @@ public final class StormerWarpsReloaded extends JavaPlugin {
                 Message.systemError(messagesFileManager.getMessagesConfig().getString("invalid-warp-name"));
             }
         }
+    }
+
+    public HashMap<UUID, String> getBedrockPlayers() {
+        return bedrockPlayers;
+    }
+
+    public void setBedrockPlayers(HashMap<UUID, String> bedrockPlayers) {
+        this.bedrockPlayers = bedrockPlayers;
+    }
+
+    public void addToBedrockPlayers(UUID uuid, String playerName){
+        this.bedrockPlayers.put(uuid, playerName);
+    }
+
+    public void removeFromBedrockPlayers(UUID uuid){
+        this.bedrockPlayers.remove(uuid);
+    }
+
+    public static FloodgateApi getFloodgateApi() {
+        return floodgateApi;
     }
 }
