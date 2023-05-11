@@ -50,8 +50,8 @@ public class MessagesFileManager {
         try {
             this.getMessagesConfig().save(this.configFile);
         }catch (IOException e){
-            logger.severe(ColorUtils.translateColorCodes("&6OrbSMP: &4Could not save messages.yml"));
-            logger.severe(ColorUtils.translateColorCodes("&6OrbSMP: &4Check the below message for the reasons!"));
+            logger.severe(ColorUtils.translateColorCodes("&6StormerWarpsReloaded: &4Could not save messages.yml"));
+            logger.severe(ColorUtils.translateColorCodes("&6StormerWarpsReloaded: &4Check the below message for the reasons!"));
             e.printStackTrace();
         }
     }

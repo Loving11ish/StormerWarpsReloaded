@@ -2,6 +2,7 @@ name: StormerWarpsReloaded
 version: '${project.version}'
 main: me.loving11ish.stormerwarpsreloaded.StormerWarpsReloaded
 api-version: 1.13
+folia-supported: true
 authors: [Loving11ish, stormer3428]
 description: Updated and upgraded StormerWarps plugin! Updated to make it more recourse efficient.
 
