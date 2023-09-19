@@ -10,6 +10,7 @@ import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.UUID;
 
 public class Warp {
 
@@ -98,7 +99,14 @@ public class Warp {
     }
 
     public void warp(Player p) {
+        UUID uuid = p.getUniqueId();
         Message.normal(p, "Going to " + this.getName());
+        if (StormerWarpsReloaded.getFloodgateApi() != null){
+            if (StormerWarpsReloaded.i.getBedrockPlayers().containsKey(uuid)){
+                p.teleport(this.getLocation());
+                return;
+            }
+        }
         PaperLib.teleportAsync(p, this.getLocation());
     }
 
