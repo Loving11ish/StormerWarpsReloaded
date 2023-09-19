@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7f5e84c6-9fd5-48a2-86f0-690defd05147" name="Changes" comment="Updated GitHub repository. Updated Maven Shade plugin. Updated to Java 17. Added TCoded FoliaLib support. Added isFloodgateEnabled method to main class. Added isPlugManXEnabled method to main class. Added PlugManX API support. Fixed error message syntax in MessagesFileManager.  Changed plugin version to `1.0.1`." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2NQff7RIUtFLTAsPz2rRblPe1cd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f5e84c6-9fd5-48a2-86f0-690defd05147" name="Changes" comment="" />
+      <created>1679601327926</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679601327926</updated>
+      <workItem from="1679601330287" duration="47000" />
+      <workItem from="1679601385242" duration="9583000" />
+      <workItem from="1679611345512" duration="4946000" />
+      <workItem from="1679622570894" duration="8000" />
+      <workItem from="1679622967778" duration="1030000" />
+      <workItem from="1680033228740" duration="3255000" />
+      <workItem from="1683836032800" duration="3351000" />
+      <workItem from="1695166243084" duration="176000" />
+    </task>
+    <task id="LOCAL-00001" summary="Updated GitHub repository. Fixed MessagesFileManager NPE at startup. Changed plugin version to `1.0.0-ALPHA-02`">
+      <created>1679615857294</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679615857294</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Updated GitHub repository. Added plugin prefix to messages.yml. Streamlined Message.java. Changed plugin version to `1.0.0-ALPHA-03`">
+      <created>1679618531283</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679618531283</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated GitHub repository. Fixed colour code error. Changed plugin version to `1.0.0`.">
+      <created>1679619661246</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679619661246</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated GitHub repository. Fixed permission error. Removed permission node `stormerwarpsreloaded.use`. Changed plugin version to `1.0.0`.">
+      <created>1679623506080</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679623506080</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated GitHub repository. Added native bedrock player support. Implemented FloodgateAPI. Added new PlayerConnectEvent. Added new PlayerDisconnectEvent. Added new bedrock check on warp teleport. Changed plugin version to `1.0.0`.">
+      <created>1680040377849</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680040377849</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated GitHub repository. Updated Maven Shade plugin. Updated to Java 17. Added TCoded FoliaLib support. Added isFloodgateEnabled method to main class. Added isPlugManXEnabled method to main class. Added PlugManX API support. Fixed error message syntax in MessagesFileManager.  Changed plugin version to `1.0.1`.">
+      <created>1683838537580</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683838537580</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated GitHub repository. Fixed MessagesFileManager NPE at startup. Changed plugin version to `1.0.0-ALPHA-02`" />
+    <MESSAGE value="Updated GitHub repository. Added plugin prefix to messages.yml. Streamlined Message.java. Changed plugin version to `1.0.0-ALPHA-03`" />
+    <MESSAGE value="Updated GitHub repository. Fixed colour code error. Changed plugin version to `1.0.0`." />
+    <MESSAGE value="Updated GitHub repository. Fixed permission error. Removed permission node `stormerwarpsreloaded.use`. Changed plugin version to `1.0.0`." />
+    <MESSAGE value="Updated GitHub repository. Added native bedrock player support. Implemented FloodgateAPI. Added new PlayerConnectEvent. Added new PlayerDisconnectEvent. Added new bedrock check on warp teleport. Changed plugin version to `1.0.0`." />
+    <MESSAGE value="Updated GitHub repository. Updated Maven Shade plugin. Updated to Java 17. Added TCoded FoliaLib support. Added isFloodgateEnabled method to main class. Added isPlugManXEnabled method to main class. Added PlugManX API support. Fixed error message syntax in MessagesFileManager.  Changed plugin version to `1.0.1`." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated GitHub repository. Updated Maven Shade plugin. Updated to Java 17. Added TCoded FoliaLib support. Added isFloodgateEnabled method to main class. Added isPlugManXEnabled method to main class. Added PlugManX API support. Fixed error message syntax in MessagesFileManager.  Changed plugin version to `1.0.1`." />
+  </component>
+</project>
