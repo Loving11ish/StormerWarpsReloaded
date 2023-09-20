@@ -99,14 +99,7 @@ public class Warp {
     }
 
     public void warp(Player p) {
-        UUID uuid = p.getUniqueId();
         Message.normal(p, "Going to " + this.getName());
-        if (StormerWarpsReloaded.getFloodgateApi() != null){
-            if (StormerWarpsReloaded.i.getBedrockPlayers().containsKey(uuid)){
-                p.teleport(this.getLocation());
-                return;
-            }
-        }
         PaperLib.teleportAsync(p, this.getLocation());
     }
 
