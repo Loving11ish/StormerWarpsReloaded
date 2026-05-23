@@ -1,12 +1,3 @@
-Replace:
-
-```text
-src/main/java/me/loving11ish/stormerwarpsreloaded/StormerWarpsReloaded.java
-```
-
-with this whole file:
-
-```java
 package me.loving11ish.stormerwarpsreloaded;
 
 import com.tcoded.folialib.FoliaLib;
@@ -19,6 +10,7 @@ import me.loving11ish.stormerwarpsreloaded.utils.Message;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
+import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.*;
@@ -26,10 +18,13 @@ import java.util.logging.Logger;
 
 public final class StormerWarpsReloaded extends JavaPlugin {
 
+    private final PluginDescriptionFile pluginInfo = getDescription();
+    private final String pluginVersion = pluginInfo.getVersion();
+
     public static StormerWarpsReloaded i;
     public MessagesFileManager messagesFileManager;
-    private FoliaLib foliaLib = new FoliaLib(this);
-    Logger logger = this.getLogger();
+    private final FoliaLib foliaLib = new FoliaLib(this);
+    private final Logger logger = this.getLogger();
 
     public FoliaLib getFoliaLib() {
         return foliaLib;
@@ -61,11 +56,26 @@ public final class StormerWarpsReloaded extends JavaPlugin {
         this.reload();
 
         super.onEnable();
+
+        // Final Startup message
+        this.logger.info(ColorUtils.translateColorCodes("-------------------------------------------"));
+        this.logger.info(ColorUtils.translateColorCodes("&3Plugin By &b&lLoving11ish"));
+        this.logger.info(ColorUtils.translateColorCodes("&3has been loaded successfully"));
+        this.logger.info(ColorUtils.translateColorCodes("&3Plugin Version: &d&l" + pluginVersion));
+        this.logger.info(ColorUtils.translateColorCodes("-------------------------------------------"));
     }
 
     @Override
     public void onDisable() {
         foliaLib.getImpl().cancelAllTasks();
+
+        // Final Shutdown message
+        this.logger.info(ColorUtils.translateColorCodes("-------------------------------------------"));
+        this.logger.info(ColorUtils.translateColorCodes("&3Plugin By &b&lLoving11ish"));
+        this.logger.info(ColorUtils.translateColorCodes("&3has been shutdown successfully"));
+        this.logger.info(ColorUtils.translateColorCodes("&3Plugin Version: &d&l" + pluginVersion));
+        this.logger.info(ColorUtils.translateColorCodes("&3Goodbye"));
+        this.logger.info(ColorUtils.translateColorCodes("-------------------------------------------"));
     }
 
     public void loadConfig() {
@@ -172,4 +182,3 @@ public final class StormerWarpsReloaded extends JavaPlugin {
         }
     }
 }
-```

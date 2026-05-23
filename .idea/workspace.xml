@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f5e84c6-9fd5-48a2-86f0-690defd05147" name="Changes" comment="Updated GitHub repository. Updated Maven Shade plugin. Updated to Java 17. Added TCoded FoliaLib support. Added isFloodgateEnabled method to main class. Added isPlugManXEnabled method to main class. Added PlugManX API support. Fixed error message syntax in MessagesFileManager.  Changed plugin version to `1.0.1`." />
+    <list default="true" id="7f5e84c6-9fd5-48a2-86f0-690defd05147" name="Changes" comment="Updated GitHub repository. Updated all dependencies. Removed FloodgateAPI. Removed Bedrock player checks. Downgraded to Java 11. Changed plugin version to `1.0.2`.">
+      <change afterPath="$PROJECT_DIR$/.idea/StormerWarpsReloaded.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_31_1_jre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_rylinaux_PlugMan_2_2_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_geysermc_floodgate_api_2_2_0_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_joml_joml_1_10_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_09_2023,_00_31_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_09_2023__00_31__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StormerWarpsReloaded.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StormerWarpsReloaded.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/loving11ish/stormerwarpsreloaded/StormerWarpsReloaded.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/loving11ish/stormerwarpsreloaded/StormerWarpsReloaded.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/loving11ish/stormerwarpsreloaded/models/Warp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/loving11ish/stormerwarpsreloaded/models/Warp.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +36,29 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="d331f2c0-6e8b-4323-a606-8d20aa6cbc00" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="d331f2c0-6e8b-4323-a606-8d20aa6cbc00" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/melody/IdeaProjects/StormerWarpsReloaded" value="2NQff7RIUtFLTAsPz2rRblPe1cd" />
+    </persistenceIdMap>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -23,17 +70,35 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Loving11ish"
+  }
+}]]></component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Loving11ish/StormerWarpsReloaded.git",
+    "accountId": "b3564e8f-93e1-45f9-a9ae-945bef48a8a5"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2NQff7RIUtFLTAsPz2rRblPe1cd" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -41,14 +106,65 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="StormerWarpsReloaded [clean,package,-U]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+                <option value="-U" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,6 +181,9 @@
       <workItem from="1680033228740" duration="3255000" />
       <workItem from="1683836032800" duration="3351000" />
       <workItem from="1695166243084" duration="176000" />
+      <workItem from="1695166424246" duration="1870000" />
+      <workItem from="1698186738148" duration="47000" />
+      <workItem from="1779548107707" duration="544000" />
     </task>
     <task id="LOCAL-00001" summary="Updated GitHub repository. Fixed MessagesFileManager NPE at startup. Changed plugin version to `1.0.0-ALPHA-02`">
       <created>1679615857294</created>
@@ -108,7 +227,23 @@
       <option name="project" value="LOCAL" />
       <updated>1683838537580</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updated GitHub repository. Updated all dependencies. Downgraded to Java 11. Changed plugin version to `1.0.2`.">
+      <option name="closed" value="true" />
+      <created>1695167902650</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695167902650</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updated GitHub repository. Updated all dependencies. Removed FloodgateAPI. Removed Bedrock player checks. Downgraded to Java 11. Changed plugin version to `1.0.2`.">
+      <option name="closed" value="true" />
+      <created>1695168263118</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695168263118</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +267,16 @@
     <MESSAGE value="Updated GitHub repository. Fixed permission error. Removed permission node `stormerwarpsreloaded.use`. Changed plugin version to `1.0.0`." />
     <MESSAGE value="Updated GitHub repository. Added native bedrock player support. Implemented FloodgateAPI. Added new PlayerConnectEvent. Added new PlayerDisconnectEvent. Added new bedrock check on warp teleport. Changed plugin version to `1.0.0`." />
     <MESSAGE value="Updated GitHub repository. Updated Maven Shade plugin. Updated to Java 17. Added TCoded FoliaLib support. Added isFloodgateEnabled method to main class. Added isPlugManXEnabled method to main class. Added PlugManX API support. Fixed error message syntax in MessagesFileManager.  Changed plugin version to `1.0.1`." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated GitHub repository. Updated Maven Shade plugin. Updated to Java 17. Added TCoded FoliaLib support. Added isFloodgateEnabled method to main class. Added isPlugManXEnabled method to main class. Added PlugManX API support. Fixed error message syntax in MessagesFileManager.  Changed plugin version to `1.0.1`." />
+    <MESSAGE value="Updated GitHub repository. Updated all dependencies. Downgraded to Java 11. Changed plugin version to `1.0.2`." />
+    <MESSAGE value="Updated GitHub repository. Updated all dependencies. Removed FloodgateAPI. Removed Bedrock player checks. Downgraded to Java 11. Changed plugin version to `1.0.2`." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated GitHub repository. Updated all dependencies. Removed FloodgateAPI. Removed Bedrock player checks. Downgraded to Java 11. Changed plugin version to `1.0.2`." />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

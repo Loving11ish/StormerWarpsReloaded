@@ -1,12 +1,3 @@
-Replace:
-
-```text
-src/main/java/me/loving11ish/stormerwarpsreloaded/models/Warp.java
-```
-
-with this whole file:
-
-```java
 package me.loving11ish.stormerwarpsreloaded.models;
 
 import me.loving11ish.stormerwarpsreloaded.StormerWarpsReloaded;
@@ -18,7 +9,6 @@ import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.UUID;
 
 public class Warp {
 
@@ -139,4 +129,3 @@ public class Warp {
         this.opOnly = opOnly;
     }
 }
-```
